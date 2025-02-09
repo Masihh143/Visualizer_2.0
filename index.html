@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISUALIZER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">VISUALIZER</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dictionary.html">Dictionary</a></li>
+            <li><a href="nasa.html">Visualizer</a></li>
+            <li id="contact"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Fullscreen Image Section -->
+    <section class="apod-container">
+        <div class="apod-image" id="apodImage">
+            <h2>Loading NASA's APOD...</h2>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <div id="test">
+        <h2>What People Say</h2>
+    </div>
+    <section class="testimonials">
+        
+        <div class="testimonial">
+            <p>"This project opened my eyes to the wonders of space!"</p>
+            <span>- Donald Trump.</span>
+        </div>
+        <div class="testimonial">
+            <p>"A beautiful and immersive way to explore the universe."</p>
+            <span>- Steve Jobs.</span>
+        </div>
+        <div class="testimonial">
+            <p>"The best website for students and researchers"</p>
+            <span>- Narendra Modi.</span>
+        </div>
+        <div class="testimonial">
+            <p>"Really liked the efforts, I would like to offer you a job."</p>
+            <span>- Bill Gates.</span>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is NASA's APOD?</h3>
+            <p>APOD (Astronomy Picture of the Day) is an image provided by NASA daily, showcasing the universe's beauty.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How is the data fetched?</h3>
+            <p>The data is retrieved using NASA's API and dynamically displayed on this page.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What kind of data is displayed here?</h3>
+            <p>TThis page showcases information such as the name, type, mass, radius, orbital period, and other details of celestial objects retrieved from NASA's database.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I search for any celestial body?</h3>
+            <p>Yes, you can search for planets, moons, comets, asteroids, and other celestial objects available in NASA's database. Simply type the name of the object to retrieve detailed information.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+
+<script src="apod.js"></script>
+</html>
